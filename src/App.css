@@ -1,0 +1,43 @@
+html {
+    padding: 0;
+      margin: 0;
+      border: 0;
+    width: 100%;
+    background-color: #0079BE;
+}
+
+.cards-container {
+  display: flex;
+  width: 1235px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* MOBILE */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 350px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
+    html{
+
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+  }
+  
+    body
+    {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+}
+

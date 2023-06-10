@@ -1,0 +1,119 @@
+.header {
+  position: relative;
+  width: 1235px;
+  height: 55px;
+  background-color:#0067A3;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+  color: #FFFFFF;
+  margin: auto 20px;
+}
+
+.avatar {
+  position: relative;
+  display: flex;
+  align-items: center; 
+  /* cursor: pointer; */
+  margin: auto 23px;
+}
+
+.avatar-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 20px; 
+}
+
+.arrowdown-img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 150px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 8px;
+  list-style-type: none;
+  margin: 0;
+  display: none;
+  z-index: 2;
+}
+
+.menu li {
+  text-align: center;
+  border-radius:10px;
+  padding: 8px 0;
+}
+
+.menu li:hover {
+  cursor:pointer;
+  background-color: #f44d4d;
+  color: #fff;
+}
+
+.avatar:hover .menu {
+  display: block;
+}
+
+.arrowdown-img.arrowdown-img-open {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* MOBILE */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 350px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .header {
+    position: relative;
+    width: 315px;
+    height: 55px;
+    background-color: #0067A3;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: -6px;
+    }
+
+
+    h1 {
+      display: none;
+    }
+
+ 
+    .avatar {
+        position: relative;
+        display: flex;
+        align-items: center;
+        left: 230px;
+    }
+
+    
+
+}

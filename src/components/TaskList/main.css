@@ -1,0 +1,248 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 282px;
+  margin: 20px 24px;
+  background-color: #EBECF0;
+  border-radius: 10px;
+}
+
+.cards h2 {
+  margin: 15px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.cards ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px -38px;
+}
+
+.cards li {
+  list-style: none;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  width: 248px;
+  position: relative;
+  right: -3px;
+}
+
+.cards li p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin: 5px 10px;
+  overflow-wrap: break-word;
+}
+
+.cards li p:hover {
+  color:chocolate;
+}
+
+.cards .add_card {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.cards .add_card input {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.cards .add_card input:focus {
+  border: none;
+  outline: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.cards .add_card input::placeholder {
+  text-align: center;
+  color: #c0392b;
+  vertical-align: bottom;
+  font: 300;
+}
+
+.cards .add_card .submit-button {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  background-color: #EBECF0;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+}
+
+.cards .add_card .submit-button.active {
+  background-color: #007bff;
+  cursor: pointer;
+}
+
+.cards .add_card .cancel-button {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.cards li.active {
+  height: auto;
+}
+
+.cards li:not(.active) {
+  height: fit-content;
+}
+
+.butt-add {
+  border:none;
+  background-color:#EBECF0;
+  cursor: pointer;
+  text-align: start;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #5E6C84;
+}
+
+.input-card {
+  width: 235px;
+  height: 35px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.container-butt-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.container-butt-nav button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+.container-butt-nav button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.container-butt-nav button:first-child {
+  background-color: #337ab7;
+  color: #ffffff;
+}
+
+.container-butt-nav button:first-child:active:enabled {
+  background-color: blue;
+}
+
+.container-butt-nav button:last-child {
+  background-color: red;
+  color: #ffffff;
+}
+
+.dropDown {
+  appearance: none;
+  border: none;
+  outline: none;
+  background-color: #EBECF0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #5E6C84;
+  cursor: pointer;
+}
+
+select option {
+  background-color: #DEDEDE;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  cursor: pointer;
+
+}
+
+select option:hover {
+  color:#c0392b;
+}
+
+
+
+/* MOBILE */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 350px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .cards-container {
+    display: flex;
+    width: 980px;
+    margin: 0 auto;
+    flex-direction: column;
+    right: 13px;
+    position: relative;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 282px;
+      margin: 40px 24px;
+      background-color: #EBECF0;
+      border-radius: 10px;
+    }
+
+    
+
+}
